@@ -27,7 +27,7 @@ export const NavBar = () => {
         {navBarOptions.map((type, index)=>{
               if (type.name === 'Categories'){
                 return (
-                <div className='navButtonBox' onClick={handleClick}>
+                <div key={index} className='navButtonBox' onClick={handleClick}>
                 <img className='navPic' src={categories} alt={type.name} width='50px'></img>
                 <p className='categoryButton'>Categories</p>
                 </div> 
@@ -35,7 +35,7 @@ export const NavBar = () => {
               } else return (
                 <nav key={type} className='navButtonBox'>
                   <img className='navPic' src={type.icon} alt={type.name} width='50px'></img>
-                    <Link className='navButton' key={index} to={`/${type.name}`}>{type.name}</Link>
+                    <Link className='navButton' to={`/${type.name}`}>{type.name}</Link>
                 </nav>
               )
         })}

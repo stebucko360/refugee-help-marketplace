@@ -3,14 +3,14 @@ export const items = [
         itemId: 1,
         itemName: 'Food Package',
         category: 'Food',
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFood&psig=AOvVaw1oQXp6Gya2PBLi_NKkgWWs&ust=1648304421370000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCJi858264fYCFQAAAAAdAAAAABAE",
+        image: "https://sciencemeetsfood.org/wp-content/uploads/2018/10/packaging2-770x360.jpg",
         location: 'London'
     },
     {
         itemId: 2,
         itemName: 'Dining Set',
         category: 'Furniture',
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffurnish.co.uk%2Fitems%2F510315-table-180-with-6-aluminium-garden-furniture-vernio&psig=AOvVaw39dKqEtZ3BFnNhQkBwy4-L&ust=1648304510534000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCOD7xvi64fYCFQAAAAAdAAAAABAG",
+        image: "https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/8/0/8008be8bd7d85faaa8a7741b072eb209.jpg",
         location: 'Manchester'
         },
 

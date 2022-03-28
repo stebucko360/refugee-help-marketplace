@@ -1,0 +1,12 @@
+.itemCard {
+  width: 200px;
+  height: 200px;
+  border: 2px black solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.itemImage {
+  width: 80%;
+  height: 40%;
+}
