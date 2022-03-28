@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 
 h1 {
   padding-top: 10px;
-  font-family: "Dela Gothic One", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 300%;
 }
 
 .navBar {
-  background-color: rgba(8, 158, 245, 0.699);
+  background-image: url("../../images/background.avif");
   position: sticky;
+  top: 20px;
   margin: auto;
   text-align: center;
   border-radius: 5px;

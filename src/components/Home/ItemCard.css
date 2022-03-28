@@ -18,3 +18,13 @@
   width: 80%;
   height: 70%;
 }
+
+.itemTitle {
+  margin-bottom: 0%;
+  padding-bottom: 5px;
+}
+
+.itemLocation {
+  margin-top: 0%;
+  padding-top: 2px;
+}

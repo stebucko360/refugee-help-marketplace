@@ -22,7 +22,7 @@ export const NavBar = () => {
   return (
     <div>
         <div className='navBar'>
-        <h1>Marketplace</h1>
+        <h1>Manna Marketplace</h1>
         <div className='navIcons'>
         {navBarOptions.map((type, index)=>{
               if (type.name === 'Categories'){
