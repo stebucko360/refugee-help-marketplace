@@ -4,6 +4,9 @@
   border: 2px black solid;
   margin: 10px;
   padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
 }
 
 .itemImage {
