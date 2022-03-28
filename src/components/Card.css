@@ -1,0 +1,13 @@
+.card {
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
