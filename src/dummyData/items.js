@@ -21,5 +21,12 @@ export const items = [
         image: "https://m.media-amazon.com/images/I/51xj16W6aJL._AC_UL320_.jpg",
         location: 'Manchester'
         },
+    {
+        itemId: 4,
+        itemName: 'Board Game',
+        category: 'Toys',
+        image: "https://darkroom.contagious.com/1000/ac3555c7de036faa80d2a56e2c3e89ec:e734b280686e9bb5c5e14706a0e777d4/2-secondary-image-dice-roll-gameplay.jpg",
+        location: 'Liverpool'
+        },
         
 ]

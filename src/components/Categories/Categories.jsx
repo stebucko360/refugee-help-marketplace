@@ -12,7 +12,7 @@ export const Categories = () => {
     const categoriesList = [{name:'Food', icon: Food}, {name:'Clothing', icon: Clothing}, {name:'Furniture', icon: Furniture}, {name:'Toys', icon: Toys}, {name:'Sporting Equipment', icon: Sports}, {name:'Technology', icon: Technology}]
     
   return (
-    <Card>
+    <div className='categoriesWrapper'>
         {categoriesList.map((category, index)=>{
             return (
                 <div key={category.icon} className='categoryBox'>
@@ -21,6 +21,6 @@ export const Categories = () => {
                 </div>
             )
         })}
-    </Card> 
+    </div> 
   )
 }
