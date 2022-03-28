@@ -1,15 +1,20 @@
 .itemCard {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border: 2px black solid;
   margin: 10px;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+  text-align: center;
 }
 
 .itemImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   width: 80%;
-  height: 40%;
+  height: 70%;
 }
