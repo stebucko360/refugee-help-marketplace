@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
-import { Card } from '../../Card';
+import { Card } from '../../UI/Card';
 import { items } from '../../../dummyData/items'
 import { ItemCard } from '../../Home/ItemCard';
 

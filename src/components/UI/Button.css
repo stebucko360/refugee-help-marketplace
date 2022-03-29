@@ -1,0 +1,10 @@
+.infoButton {
+  border: solid 2px rgb(0, 183, 255);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.infoButton:hover {
+  background-color: rgb(0, 183, 255);
+  color: white;
+}
