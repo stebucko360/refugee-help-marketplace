@@ -34,7 +34,7 @@ h1 {
 
 .navButton:hover,
 .categoryButton:hover {
-  color: white;
+  color: rgb(0, 153, 255);
 }
 
 .navButton:focus,

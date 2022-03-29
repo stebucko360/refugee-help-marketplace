@@ -41,7 +41,7 @@ export const NavBar = () => {
         })}
         </div>
         </div>
-        {categoriesSelected && (<Categories/>)}
+        {categoriesSelected && (<Categories setCategoriesSelected={setCategoriesSelected}/>)}
     </div>
   )
 }
