@@ -25,7 +25,7 @@ export const Categories = ({ setCategoriesSelected }) => {
           <Link
             key={category.icon}
             className="categoryBox"
-            to={"/categories/" + category.name}
+            to={`/categories/${category.name}`}
             onClick={() => {
               setCategoriesSelected(false);
             }}
