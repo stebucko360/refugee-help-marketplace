@@ -17,6 +17,8 @@
   text-align: center;
   width: 80%;
   height: 70%;
+  border: 2px solid rgba(8, 158, 245, 0.699);
+  border-radius: 8px;
 }
 
 .itemTitle {
