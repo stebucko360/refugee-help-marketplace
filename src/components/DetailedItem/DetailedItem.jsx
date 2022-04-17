@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Card } from "../UI/Card";
 import "./DetailedItem.css";
 import { items } from "../../dummyData/items";
+import { Map } from "./Map";
 
 export const DetailedItem = () => {
   const { category_name, item_id } = useParams();
@@ -22,6 +23,8 @@ export const DetailedItem = () => {
         ></img>
         <p>{individualItem[0].description}</p>
         <h3>{individualItem[0].location}</h3>
+        <Map className="mapContainer" individualItem={individualItem} />
+        <h2>Contact details:</h2>
         <h4>{individualItem[0].contact}</h4>
       </div>
     </Card>
