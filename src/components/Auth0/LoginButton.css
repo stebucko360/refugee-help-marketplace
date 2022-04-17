@@ -16,7 +16,7 @@
   width: 60%;
   height: 40%;
   border-radius: 8px;
-  padding-top: 10%;
+  padding-top: 5%;
   margin-top: 5%;
   margin-bottom: 10%;
   border: black solid 2px;
@@ -24,7 +24,7 @@
 
 .welcomeMessage {
   text-align: center;
-  font-size: min(300px, 200%);
+  font-size: min(350px, 300%);
 }
 
 .buttonContainer {

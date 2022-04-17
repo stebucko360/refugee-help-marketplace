@@ -15,17 +15,22 @@ export const DetailedItem = () => {
   return (
     <Card>
       <div className="itemContainer">
-        <h2>{individualItem[0].itemName}</h2>
         <img
           src={individualItem[0].image}
           alt={individualItem[0].itemName}
           className="itemPic"
         ></img>
-        <p>{individualItem[0].description}</p>
-        <h3>{individualItem[0].location}</h3>
-        <Map className="mapContainer" individualItem={individualItem} />
-        <h2>Contact details:</h2>
-        <h4>{individualItem[0].contact}</h4>
+        <h2 className="itemNameHeader">{individualItem[0].itemName}</h2>
+        <p className="itemDescription">{individualItem[0].description}</p>
+        <div className="contactContainer">
+          <p className="gap"></p>
+          <div className="mapContainer">
+            <Map individualItem={individualItem} />
+          </div>
+          <h2 className="contactDetailsHeader">Contact details:</h2>
+          <h3>{individualItem[0].location}</h3>
+          <h4>{individualItem[0].contact}</h4>
+        </div>
       </div>
     </Card>
   );

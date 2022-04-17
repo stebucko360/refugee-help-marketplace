@@ -9,7 +9,7 @@ export const Map = ({ individualItem }) => {
     <MapContainer
       center={[51.505, -0.09]}
       zoom={13}
-      style={{ width: "30%", height: "300px" }}
+      style={{ width: "70%", height: "300px" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
