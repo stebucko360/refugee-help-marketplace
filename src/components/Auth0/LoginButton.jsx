@@ -9,9 +9,11 @@ export const LoginButton = () => {
     <div className="modulo">
       <div className="loginBox">
         <p className="welcomeMessage">Welcome to Manna Care</p>
-        <button className="loginButton" onClick={() => loginWithRedirect()}>
-          Log In
-        </button>
+        <div className="buttonContainer">
+          <button className="loginButton" onClick={() => loginWithRedirect()}>
+            Log In
+          </button>
+        </div>
       </div>
     </div>
   );
