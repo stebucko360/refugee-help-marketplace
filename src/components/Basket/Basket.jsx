@@ -15,6 +15,7 @@ export const Basket = ({ basket, setBasket }) => {
     <Card>
       <div className="basketContainer">
         <h2>Your Basket:</h2>
+        {basket.length === 0 && <p>Your basket is empty</p>}
         <ol>
           {basket.map((basketItem, index) => {
             return (
