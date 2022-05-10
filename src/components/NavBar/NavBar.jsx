@@ -37,7 +37,6 @@ export const NavBar = ({ setBasketOpen, basketOpen }) => {
                     className="navPic"
                     src={categories}
                     alt={type.name}
-                    width="50px"
                   ></img>
                   <p className="categoryButton">Categories</p>
                 </div>
