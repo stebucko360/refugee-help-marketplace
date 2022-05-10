@@ -1,0 +1,11 @@
+.basketContainer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(8, 158, 245, 0.699);
+}
+
+.basketItem {
+    display: grid;
+    grid-template-columns: 200px 100px 100px;
+}

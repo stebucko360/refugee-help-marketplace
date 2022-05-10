@@ -7,9 +7,11 @@ import { DetailedItem } from "./components/DetailedItem/DetailedItem";
 import { LoginButton } from "./components/Auth0/LoginButton";
 import { LogoutButton } from "./components/Auth0/LogoutButton";
 import { useState } from "react";
+import { Basket } from "./components/Basket/Basket";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [basket, setBasket] = useState([]);
 
   return (
     <BrowserRouter>
@@ -26,8 +28,9 @@ function App() {
           <Route path="/categories/:category_name" element={<CategoryCard />} />
           <Route
             path="/:category_name/itemInformation/:item_id"
-            element={<DetailedItem />}
+            element={<DetailedItem setBasket={setBasket} />}
           />
+          <Route path="/basket" element={<Basket basket={basket} />} />
         </Routes>
       </div>
     </BrowserRouter>
