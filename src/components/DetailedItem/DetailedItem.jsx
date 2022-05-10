@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Card } from "../UI/Card";
 import "./DetailedItem.css";
@@ -7,7 +7,7 @@ import { Map } from "./Map";
 
 export const DetailedItem = ({ setBasket }) => {
   const { category_name, item_id } = useParams();
-
+  const [addedToBasket, setAddedToBasket] = useState(false);
   const individualItem = items.filter((item) => {
     return item.itemId === parseInt(item_id);
   });
@@ -17,6 +17,7 @@ export const DetailedItem = ({ setBasket }) => {
       const newArray = [...currValue, individualItem[0]];
       return newArray;
     });
+    setAddedToBasket(true);
   };
 
   return (
@@ -36,6 +37,9 @@ export const DetailedItem = ({ setBasket }) => {
         >
           Add to Basket
         </button>
+        {addedToBasket && (
+          <p className="itemAddedNote">Item added to your Basket! :)</p>
+        )}
         <div className="contactContainer">
           <p className="gap"></p>
           <div className="mapContainer">

@@ -19,6 +19,9 @@ h1 {
 
 .navIcons {
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  justify-content: center;
 }
 
 .navButton,
@@ -42,12 +45,12 @@ h1 {
 .navButton:active {
   text-decoration: none;
 }
-
+/* 
 .navButtonBox {
   display: inline-block;
   text-align: center;
   margin-right: 50px;
-}
+} */
 
 .navPic {
   display: block;

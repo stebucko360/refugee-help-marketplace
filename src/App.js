@@ -11,6 +11,7 @@ import { Basket } from "./components/Basket/Basket";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [basketOpen, setBasketOpen] = useState(false);
   const [basket, setBasket] = useState([]);
 
   return (
@@ -21,7 +22,8 @@ function App() {
         ) : (
           <LoginButton setIsAuthenticated={setIsAuthenticated} />
         )}
-        <NavBar />
+        <NavBar setBasketOpen={setBasketOpen} basketOpen={basketOpen} />
+        {basketOpen && <Basket basket={basket} />}
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
@@ -30,7 +32,6 @@ function App() {
             path="/:category_name/itemInformation/:item_id"
             element={<DetailedItem setBasket={setBasket} />}
           />
-          <Route path="/basket" element={<Basket basket={basket} />} />
         </Routes>
       </div>
     </BrowserRouter>

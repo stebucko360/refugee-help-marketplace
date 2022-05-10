@@ -8,7 +8,7 @@ import home from "./images/home.png";
 import person from "./images/person.png";
 import plus from "./images/plus.png";
 
-export const NavBar = () => {
+export const NavBar = ({ setBasketOpen, basketOpen }) => {
   const [categoriesSelected, setCategoriesSelected] = useState(false);
   const navBarOptions = [
     { name: "Home", icon: home },
@@ -40,6 +40,22 @@ export const NavBar = () => {
                     width="50px"
                   ></img>
                   <p className="categoryButton">Categories</p>
+                </div>
+              );
+            } else if (type.name === "Basket") {
+              return (
+                <div
+                  onClick={() => {
+                    setBasketOpen(!basketOpen);
+                  }}
+                >
+                  <img
+                    className="navPic"
+                    src={type.icon}
+                    alt={type.name}
+                    width="50px"
+                  ></img>
+                  <p className="navButton">Basket</p>
                 </div>
               );
             } else
