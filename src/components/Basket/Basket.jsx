@@ -2,7 +2,15 @@ import React from "react";
 import { Card } from "../UI/Card";
 import "./Basket.css";
 
-export const Basket = ({ basket }) => {
+export const Basket = ({ basket, setBasket }) => {
+  const handleRemove = (index) => {
+    setBasket((currArray) => {
+      const newArray = [...currArray];
+      newArray.splice(index, 1);
+      return newArray;
+    });
+  };
+
   return (
     <Card>
       <div className="basketContainer">
@@ -17,7 +25,13 @@ export const Basket = ({ basket }) => {
                   alt={basketItem.itemName}
                   width="50%"
                 ></img>
-                <button>Remove Item</button>
+                <button
+                  onClick={() => {
+                    handleRemove(index);
+                  }}
+                >
+                  Remove Item
+                </button>
                 <p></p>
               </div>
             );
