@@ -16,6 +16,8 @@ export const Categories = ({ setCategoriesSelected }) => {
     { name: "Toys", icon: Toys },
     { name: "Sporting Equipment", icon: Sports },
     { name: "Technology", icon: Technology },
+    { name: "People", icon: Technology },
+    { name: "Events", icon: Technology },
   ];
 
   return (

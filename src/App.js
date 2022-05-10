@@ -4,17 +4,21 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./components/Home/Home";
 import { CategoryCard } from "./components/Categories/CategoryCard/CategoryCard";
 import { DetailedItem } from "./components/DetailedItem/DetailedItem";
-import { useAuth0 } from "@auth0/auth0-react";
 import { LoginButton } from "./components/Auth0/LoginButton";
 import { LogoutButton } from "./components/Auth0/LogoutButton";
+import { useState } from "react";
 
 function App() {
-  const { isAuthenticated } = useAuth0();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
     <BrowserRouter>
       <div className="App">
-        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+        {isAuthenticated ? (
+          <LogoutButton setIsAuthenticated={setIsAuthenticated} />
+        ) : (
+          <LoginButton setIsAuthenticated={setIsAuthenticated} />
+        )}
         <NavBar />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
