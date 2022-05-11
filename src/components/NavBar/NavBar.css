@@ -64,3 +64,10 @@ h1 {
 .navPic:hover {
   width: 60px;
 }
+
+.basketCounter {
+  color: white;
+  background-color: rgb(0, 153, 255);
+  border: 0 solid white;
+  border-radius: 8px;
+}

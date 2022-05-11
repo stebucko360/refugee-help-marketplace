@@ -22,7 +22,11 @@ function App() {
         ) : (
           <LoginButton setIsAuthenticated={setIsAuthenticated} />
         )}
-        <NavBar setBasketOpen={setBasketOpen} basketOpen={basketOpen} />
+        <NavBar
+          setBasketOpen={setBasketOpen}
+          basketOpen={basketOpen}
+          basket={basket}
+        />
         {basketOpen && <Basket basket={basket} setBasket={setBasket} />}
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />

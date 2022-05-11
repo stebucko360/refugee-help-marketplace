@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { Categories } from "../Categories/Categories";
-import basket from "./images/basket.png";
+import basketimg from "./images/basket.png";
 import categories from "./images/categories.png";
 import home from "./images/home.png";
 import person from "./images/person.png";
 import plus from "./images/plus.png";
 
-export const NavBar = ({ setBasketOpen, basketOpen }) => {
+export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
   const [categoriesSelected, setCategoriesSelected] = useState(false);
   const navBarOptions = [
     { name: "Home", icon: home },
     { name: "Add New Item", icon: plus },
     { name: "Categories", icon: categories },
-    { name: "Basket", icon: basket },
+    { name: "Basket", icon: basketimg },
     { name: "Profile", icon: person },
   ];
 
@@ -54,7 +54,12 @@ export const NavBar = ({ setBasketOpen, basketOpen }) => {
                     alt={type.name}
                     width="50px"
                   ></img>
-                  <p className="navButton">Basket</p>
+                  <p className="navButton">
+                    Basket{" "}
+                    {basket.length > 0 && (
+                      <span className="basketCounter">{basket.length}</span>
+                    )}
+                  </p>
                 </div>
               );
             } else
