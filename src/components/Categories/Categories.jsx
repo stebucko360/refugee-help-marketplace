@@ -21,11 +21,19 @@ export const Categories = ({ setCategoriesSelected }) => {
     { name: "Technology", icon: Technology },
     { name: "People", icon: People },
     { name: "Events", icon: Events },
-    { name: "Accommodation", icon: Accommodation }
+    { name: "Accommodation", icon: Accommodation },
   ];
 
   return (
     <div className="categoriesWrapper">
+      <button
+        className="exitButton"
+        onClick={() => {
+          setCategoriesSelected(false);
+        }}
+      >
+        X
+      </button>
       {categoriesList.map((category, index) => {
         return (
           <Link
