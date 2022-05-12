@@ -1,13 +1,14 @@
 .card {
-  background-color: rgba(0, 0, 0, 0.219);
-  border-radius: 5px;
+  background-color: rgba(251, 251, 251, 0.638);
+  /* border-radius: 5px; */
+  /* border: 2px solid black; */
   width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+  /* box-shadow: 3px 3px 3px 4px rgb(63, 63, 63); */
   padding-top: 10px;
   padding-bottom: 10px;
 }

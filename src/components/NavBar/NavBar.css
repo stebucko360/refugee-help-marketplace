@@ -11,12 +11,12 @@ h1 {
   top: 20px;
   margin: auto;
   text-align: center;
-  border-radius: 5px;
   width: 80%;
   height: 22vh;
   margin-bottom: 10px;
-  border: 2px solid black;
-  padding-bottom: 22px;
+  /* border: 2px solid black; */
+  /* padding-bottom: 2%; */
+  transition: padding-bottom 0.5s;
 }
 
 .navIcons {
@@ -39,6 +39,7 @@ h1 {
 .navButton:hover,
 .categoryButton:hover {
   color: rgb(0, 153, 255);
+  margin-bottom: 3%;
 }
 
 .navButton:focus,
@@ -47,11 +48,10 @@ h1 {
 .navButton:active {
   text-decoration: none;
 }
-/* 
-.navButtonBox {
+
+/* .navButtonBox {
   display: inline-block;
   text-align: center;
-  margin-right: 50px;
 } */
 
 .navPic {
@@ -63,6 +63,11 @@ h1 {
 
 .navPic:hover {
   width: 60px;
+}
+
+.navBarHover {
+  padding-bottom: 0.8%;
+  transition: all 0.5s;
 }
 
 .basketCounter {
