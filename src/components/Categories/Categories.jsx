@@ -7,6 +7,9 @@ import Furniture from "./images/furniture.png";
 import Toys from "./images/Toys.png";
 import Sports from "./images/sports.png";
 import Technology from "./images/technology.png";
+import People from "./images/People.png";
+import Events from "./images/Events.png";
+import Accommodation from "./images/Accommodation.png";
 
 export const Categories = ({ setCategoriesSelected }) => {
   const categoriesList = [
@@ -16,12 +19,21 @@ export const Categories = ({ setCategoriesSelected }) => {
     { name: "Toys", icon: Toys },
     { name: "Sporting Equipment", icon: Sports },
     { name: "Technology", icon: Technology },
-    { name: "People", icon: Technology },
-    { name: "Events", icon: Technology },
+    { name: "People", icon: People },
+    { name: "Events", icon: Events },
+    { name: "Accommodation", icon: Accommodation },
   ];
 
   return (
     <div className="categoriesWrapper">
+      <button
+        className="exitButton"
+        onClick={() => {
+          setCategoriesSelected(false);
+        }}
+      >
+        X
+      </button>
       {categoriesList.map((category, index) => {
         return (
           <Link

@@ -1,0 +1,15 @@
+.formContainer {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.submit {
+    color: rgb(0, 153, 255);
+}
