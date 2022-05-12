@@ -26,13 +26,18 @@ export const Basket = ({ basket, setBasket }) => {
                   alt={basketItem.itemName}
                   width="50%"
                 ></img>
+                <div className="Button">
+            
                 <button
                   onClick={() => {
                     handleRemove(index);
                   }}
+                  
                 >
                   Remove Item
+
                 </button>
+                </div>
                 <p></p>
               </div>
             );
