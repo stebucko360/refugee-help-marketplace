@@ -9,6 +9,7 @@ import { LogoutButton } from "./components/Auth0/LogoutButton";
 import { useState } from "react";
 import { Basket } from "./components/Basket/Basket";
 import { AddNewItem } from "./components/AddNewItem/AddNewItem";
+import { NotFound } from "./components/NotFound";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -38,6 +39,7 @@ function App() {
             element={<DetailedItem setBasket={setBasket} />}
           />
           <Route path="/Add%20New%20Item" element={<AddNewItem />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
