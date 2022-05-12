@@ -24,9 +24,19 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
     } else setCategoriesSelected(true);
   };
 
+  const resizeNavbar = () => 
+  {
+    document.getElementById("testing").classList.add("navBarHover");
+  }
+
+  const removeResizeNavbar = () => 
+  {
+    document.getElementById("testing").classList.remove("navBarHover");
+  }
+
   return (
     <div>
-      <div className="navBar">
+      <div className="navBar" id="testing">
         <h1>Manna Care</h1>
         <div className="navIcons">
           {navBarOptions.map((type, index) => {
@@ -37,6 +47,8 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
                     className="navPic"
                     src={categories}
                     alt={type.name}
+                    onMouseEnter = { resizeNavbar }
+                    onMouseOut = {removeResizeNavbar } 
                   ></img>
                   <p className="categoryButton">Categories</p>
                 </div>
@@ -52,7 +64,8 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
                     className="navPic"
                     src={type.icon}
                     alt={type.name}
-                    width="50px"
+                    onMouseEnter = { resizeNavbar }
+                    onMouseOut = {removeResizeNavbar } 
                   ></img>
                   <p className="navButton">
                     Basket{" "}
@@ -69,7 +82,8 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
                     className="navPic"
                     src={type.icon}
                     alt={type.name}
-                    width="50px"
+                    onMouseEnter = { resizeNavbar }
+                    onMouseOut = {removeResizeNavbar } 
                   ></img>
                   <Link className="navButton" to={`/${type.name}`}>
                     {type.name}

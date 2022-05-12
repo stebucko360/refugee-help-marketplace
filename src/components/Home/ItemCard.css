@@ -1,11 +1,10 @@
 .itemCard {
   width: 330px;
   height: 370px;
-  border: 2px black solid;
   margin: 10px;
   padding: 10px;
   background-color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   text-align: center;
   transition: width 0.1s, height 0.1s;
 }
@@ -13,7 +12,7 @@
 .itemCard:hover {
   width: 350px;
   height: 400px;
-  box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+  box-shadow: 5px 5px #f72585;
 }
 
 .itemImage {

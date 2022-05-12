@@ -1,8 +1,9 @@
 import React from "react";
+import "./LogoutButton.css";
 
 export const LogoutButton = ({ setIsAuthenticated }) => {
   return (
-    <button
+    <button className="logout"
       onClick={() => {
         setIsAuthenticated(false);
       }}

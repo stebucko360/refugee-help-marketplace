@@ -3,11 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   position: absolute;
-  top: 55%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.637);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   justify-content: center;
   padding: 10px;
 }
@@ -16,7 +16,7 @@
   background-color: rgb(255, 255, 255);
   width: 30%;
   margin: 5px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   text-align: center;
   border: 2px solid rgba(8, 158, 245, 0.699);
   padding-top: 10px;
