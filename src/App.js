@@ -8,6 +8,7 @@ import { LoginButton } from "./components/Auth0/LoginButton";
 import { LogoutButton } from "./components/Auth0/LogoutButton";
 import { useState } from "react";
 import { Basket } from "./components/Basket/Basket";
+import { AddNewItem } from "./components/AddNewItem/AddNewItem";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -36,6 +37,7 @@ function App() {
             path="/:category_name/itemInformation/:item_id"
             element={<DetailedItem setBasket={setBasket} />}
           />
+          <Route path="/Add%20New%20Item" element={<AddNewItem />} />
         </Routes>
       </div>
     </BrowserRouter>
