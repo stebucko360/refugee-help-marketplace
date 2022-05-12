@@ -1,7 +1,7 @@
 .basketContainer {
     background-color: white;
     padding: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 2px solid rgba(8, 158, 245, 0.699);
 }
 
@@ -13,5 +13,18 @@
 .Button {
     width: 50;
     height: 50;
+}
 
+.basketContainer > button, .Button > button
+{
+    border: none;
+    padding: 5px 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.basketItem > li
+{
+    margin-top: auto;
+    margin-bottom: auto;
 }

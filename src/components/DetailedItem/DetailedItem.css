@@ -2,10 +2,10 @@
   background-color: white;
   width: 80%;
   height: 80%;
-  border: solid black 2px;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+  /* border: solid black 2px; */
+  /* border-radius: 8px; */
+  padding: 2rem 2rem;
+  box-shadow: 3px 3px rgb(63, 63, 63);
 }
 
 .itemNameHeader {
@@ -19,16 +19,14 @@
 }
 
 .itemPic {
-  width: min(350px, 80%);
-  height: 400px;
-  border: 2px solid rgba(8, 158, 245, 0.699);
-  border-radius: 8px;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 40%;
+  min-height: 18rem;
+  /* border: 2px solid rgba(8, 158, 245, 0.699); */
+  /* border-radius: 8px; */
   float: left;
   margin-right: 20px;
   margin-left: 20px;
+  padding-bottom: 5vh;
 }
 
 .itemDescription {
@@ -42,9 +40,24 @@
 
 .itemAddedNote {
   color: blue;
-
 }
 
+.basketbtn
+{
+  border: none;
+  padding: 1% 2%;
+  font-size: 10px;
+  background-color: #7209b7;
+  color: white;
+  transition: all 0.5s;
+}
 
+.basketbtn:hover
+{
+   box-shadow: 2px 2px black;
+   padding: 1.2% 2.2%;
+   transition: all 0.5s;
+
+}
 
 

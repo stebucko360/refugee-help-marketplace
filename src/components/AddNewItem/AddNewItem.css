@@ -1,15 +1,68 @@
 .formContainer {
-    background-color: white;
-    padding: 20px;
-    border: 2px solid rgb(0, 153, 255);
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px 4px rgb(63, 63, 63);
+  background-color: white;
+  padding: 1.5% 15%;
+  margin: auto;
+  /* border: 2px solid rgb(0, 153, 255); */
+  /* border-radius: 10px; */
+  box-shadow: 3px 3px rgb(63, 63, 63);
 }
 
-h2 {
-    margin-bottom: 20px;
+.formContainer > h2 {
+  padding: 10px 2.5%;
+  background-color: #3a0ca3;
+  color: white;
+  width: 95%;
 }
 
 .submit {
-    color: rgb(0, 153, 255);
+  color: rgb(0, 153, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.failed {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 2.5px;
+  margin-top: 2.5px;
+}
+
+.inputfields {
+  box-sizing: border-box;
+  padding: 7px 20px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid rgb(127, 127, 127);
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.categoryInput {
+  padding: 7px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid rgba(127, 127, 127, 0);
+  border-radius: 2px;
+}
+
+.submitBtn {
+  display: block;
+  border: none;
+  margin-top: 2%;
+  margin-bottom: 8%;
+  padding: 3% 1%;
+  background-color: #7209b7;
+  color: white;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  padding: 5% 1%;
+  margin-bottom: 4%;
 }

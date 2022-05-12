@@ -56,8 +56,11 @@ export const AddNewItem = () => {
       <div className="formContainer">
         <h2>Add A New Advert</h2>
         <form onSubmit={handleSubmit}>
-          <label for="nameInput">Full Name: </label>
+          <label className="formLabel" for="nameInput">
+            Full Name:{" "}
+          </label>
           <input
+            className="inputfields"
             type="text"
             value={name}
             name="nameInput"
@@ -65,10 +68,11 @@ export const AddNewItem = () => {
               setName(event.target.value);
             }}
           />
-          <br />
-          <br />
-          <label for="itemNameInput">Item name : </label>
+          <label className="formLabel" for="itemNameInput">
+            Item name :{" "}
+          </label>
           <input
+            className="inputfields"
             type="text"
             value={itemName}
             name="itemNameInput"
@@ -76,11 +80,11 @@ export const AddNewItem = () => {
               setItemName(event.target.value);
             }}
           />
-          <br />
-          <br />
-          <label for="categorySelect">Select category Type :</label>
-          <br />
+          <label className="formLabel" for="categorySelect">
+            Select category Type :
+          </label>
           <select
+            className="categoryInput"
             name="categorySelect"
             onChange={(event) => {
               setCategory(event.target.value);
@@ -96,14 +100,14 @@ export const AddNewItem = () => {
             <option value="Accommodation">Accommodation</option>
             <option value="Events">Events</option>
           </select>
-          <br />
-          <br />
           {imageURL !== "" && (
             <img src={imageURL} alt="Uploaded image" width="30%"></img>
           )}
-          <br />
-          <label for="imageURL">Enter your image URL : </label>
+          <label className="formLabel" for="imageURL">
+            Enter your image URL :{" "}
+          </label>
           <input
+            className="inputfields"
             type="url"
             value={imageURL}
             name="imageURL"
@@ -111,13 +115,11 @@ export const AddNewItem = () => {
               setImageUrl(event.target.value);
             }}
           />
-          <br />
-          <br />
-          <label for="itemDescription">
+          <label className="formLabel" for="itemDescription">
             Write a short description about your item :{" "}
           </label>
-          <br />
           <textarea
+            className="inputfields"
             name="itemDescription"
             value={description}
             rows="5"
@@ -126,10 +128,11 @@ export const AddNewItem = () => {
               setDescription(event.target.value);
             }}
           ></textarea>
-          <br />
-          <br />
-          <label for="contactInput">Enter your contact number : </label>
+          <label className="formLabel" for="contactInput">
+            Enter your contact number :{" "}
+          </label>
           <input
+            className="inputfields"
             type="text"
             value={contact}
             name="contactInput"
@@ -137,10 +140,11 @@ export const AddNewItem = () => {
               setContact(event.target.value);
             }}
           />
-          <br />
-          <br />
-          <label for="locationInput">Location : </label>
+          <label className="formLabel" for="locationInput">
+            Location :{" "}
+          </label>
           <input
+            className="inputfields"
             type="text"
             value={location}
             name="locationInput"
@@ -148,14 +152,13 @@ export const AddNewItem = () => {
               setLocation(event.target.value);
             }}
           />
-          <br />
-          <br />
-          <button type="submit">Submit Your Item</button>
+
+          <button className="submitBtn" type="submit">Submit Your Item</button>
           {submitted && (
             <p className="submit">Successfully submitted your advertisement</p>
           )}
           {failed && (
-            <p>
+            <p className="failed">
               Failed to post, please check none of your enteries are invalid
             </p>
           )}

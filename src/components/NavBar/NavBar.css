@@ -40,6 +40,7 @@ h1 {
 .categoryButton:hover {
   color: rgb(0, 153, 255);
   margin-bottom: 3%;
+  cursor: pointer;
 }
 
 .navButton:focus,
@@ -75,4 +76,5 @@ h1 {
   background-color: rgb(0, 153, 255);
   border: 0 solid white;
   border-radius: 8px;
+  padding: 0  5px;
 }

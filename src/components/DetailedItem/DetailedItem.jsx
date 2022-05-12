@@ -31,6 +31,7 @@ export const DetailedItem = ({ setBasket }) => {
         <h2 className="itemNameHeader">{individualItem[0].itemName}</h2>
         <p className="itemDescription">{individualItem[0].description}</p>
         <button
+          className="basketbtn"
           onClick={() => {
             addToBasket();
           }}
