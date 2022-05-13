@@ -12,7 +12,7 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
   const [categoriesSelected, setCategoriesSelected] = useState(false);
   const navBarOptions = [
     { name: "Home", icon: home },
-    { name: "Add New Item", icon: plus },
+    { name: "Add New Advert", icon: plus },
     { name: "Categories", icon: categories },
     { name: "Basket", icon: basketimg },
     { name: "Profile", icon: person },

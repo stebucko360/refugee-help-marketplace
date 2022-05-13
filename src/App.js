@@ -11,6 +11,7 @@ import { Basket } from "./components/Basket/Basket";
 import { AddNewItem } from "./components/AddNewItem/AddNewItem";
 import { NotFound } from "./components/NotFound";
 import { fetchAllItems } from "./utils/api";
+import { Profile } from "./components/Profile/Profile";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -54,9 +55,10 @@ function App() {
             element={<DetailedItem setBasket={setBasket} items={items} />}
           />
           <Route
-            path="/Add%20New%20Item"
+            path="/Add%20New%20Advert"
             element={<AddNewItem setItems={setItems} items={items} />}
           />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>

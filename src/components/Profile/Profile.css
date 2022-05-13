@@ -1,0 +1,49 @@
+.ste {
+    width:200px;
+    height:200px;
+    align: center;
+}
+.button100 {
+    margin-left:35px;
+    margin-right:10px
+}
+.p1 {
+    background-color:#cbced4;
+    color: black;
+    float: bottom;
+    text-align: left;
+    font-weight: bold;
+}
+.p2 {
+    background-color:#cbced4;
+    color: black;
+    float: bottom;
+    text-align: left;
+    font-weight: bold;
+}
+.span1 {
+    font-weight: bold;
+    font-style: italic;
+}
+.span2 {
+    font-weight: bold;
+    font-style: italic;
+}
+.infoBlock {
+    background-color: #CBCED4;
+}
+.items {
+    display:inline-block;
+    margin-left:610px;
+}
+
+
+
+
+
+
+
+
+
+
+
