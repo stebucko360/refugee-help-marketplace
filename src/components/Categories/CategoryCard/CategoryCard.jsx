@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
 import { useParams } from "react-router-dom";
-import { Card } from '../../UI/Card';
-import { items } from '../../../dummyData/items'
-import { ItemCard } from '../../Home/ItemCard';
+import { Card } from "../../UI/Card";
+import { ItemCard } from "../../Home/ItemCard";
 
-export const CategoryCard = () => {
-    
-    const { category_name } = useParams();
+export const CategoryCard = ({ items }) => {
+  const { category_name } = useParams();
 
   return (
     <Card>
-        {items.filter((item)=>{
-           return item.category === category_name
-        }).map((item)=>{
-            return <ItemCard item={item}/>
+      {items.products
+        .filter((item) => {
+          return item.category === category_name;
+        })
+        .map((item) => {
+          return <ItemCard item={item} />;
         })}
     </Card>
-  )
-}
+  );
+};
