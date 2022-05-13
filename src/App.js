@@ -9,7 +9,7 @@ import { LogoutButton } from "./components/Auth0/LogoutButton";
 import { useEffect, useState } from "react";
 import { Basket } from "./components/Basket/Basket";
 import { AddNewItem } from "./components/AddNewItem/AddNewItem";
-import { NotFound } from "./components/notFound";
+import { NotFound } from "./components/NotFound";
 import { fetchAllItems } from "./utils/api";
 
 function App() {
