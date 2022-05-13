@@ -20,11 +20,11 @@ export const Basket = ({ basket, setBasket }) => {
           {basket.map((basketItem, index) => {
             return (
               <div className="basketItem">
-                <li>{basketItem.itemName}</li>
+                <li>{basketItem.itemname}</li>
                 <img
                   className="basketimg"
                   src={basketItem.image}
-                  alt={basketItem.itemName}
+                  alt={basketItem.itemname}
                   width="60%"
                 ></img>
                 <div className="Button">

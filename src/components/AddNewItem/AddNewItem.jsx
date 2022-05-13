@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import "./AddNewItem.css";
 
 import { Card } from "../UI/Card";
-import { items } from "../../dummyData/items";
 
-export const AddNewItem = () => {
+export const AddNewItem = ({ setItems, items }) => {
   const [name, setName] = useState("");
   const [itemName, setItemName] = useState("");
   const [imageURL, setImageUrl] = useState("");
@@ -18,14 +17,16 @@ export const AddNewItem = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     let index = 0;
-    for (let item of items) {
-      if (item.itemId > index) {
-        index = item.itemId;
+    const iterateArray = items.products;
+    for (let item of iterateArray) {
+      if (item.id > index) {
+        index = item.id;
       }
     }
+    console.log("index:", index);
     const newItem = {
-      itemId: index + 5,
-      itemName: name,
+      id: index + 5,
+      itemname: itemName,
       category: category,
       image: imageURL,
       location: location,
@@ -33,13 +34,17 @@ export const AddNewItem = () => {
       contact: contact,
     };
     for (let key in newItem) {
-      console.log(key);
       if (newItem[key] === "") {
         setFailed(true);
         return;
       }
     }
-    items.push(newItem);
+    console.log(newItem);
+    setItems((currValue) => {
+      const newArray = { ...currValue };
+      newArray.products.push(newItem);
+      return newArray;
+    });
     setName("");
     setItemName("");
     setImageUrl("");
@@ -153,7 +158,9 @@ export const AddNewItem = () => {
             }}
           />
 
-          <button className="submitBtn" type="submit">Submit Your Item</button>
+          <button className="submitBtn" type="submit">
+            Submit Your Item
+          </button>
           {submitted && (
             <p className="submit">Successfully submitted your advertisement</p>
           )}

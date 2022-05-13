@@ -9,7 +9,7 @@ import { LogoutButton } from "./components/Auth0/LogoutButton";
 import { useEffect, useState } from "react";
 import { Basket } from "./components/Basket/Basket";
 import { AddNewItem } from "./components/AddNewItem/AddNewItem";
-import { NotFound } from "./components/notFound";
+import { NotFound } from "./components/NotFound";
 import { fetchAllItems } from "./utils/api";
 
 function App() {
@@ -51,9 +51,12 @@ function App() {
           />
           <Route
             path="/:category_name/itemInformation/:item_id"
-            element={<DetailedItem setBasket={setBasket} />}
+            element={<DetailedItem setBasket={setBasket} items={items} />}
           />
-          <Route path="/Add%20New%20Item" element={<AddNewItem />} />
+          <Route
+            path="/Add%20New%20Item"
+            element={<AddNewItem setItems={setItems} items={items} />}
+          />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
