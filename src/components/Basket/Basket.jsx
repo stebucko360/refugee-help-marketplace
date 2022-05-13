@@ -22,28 +22,27 @@ export const Basket = ({ basket, setBasket }) => {
               <div className="basketItem">
                 <li>{basketItem.itemName}</li>
                 <img
+                  className="basketimg"
                   src={basketItem.image}
                   alt={basketItem.itemName}
-                  width="50%"
+                  width="60%"
                 ></img>
                 <div className="Button">
-            
-                <button
-                  onClick={() => {
-                    handleRemove(index);
-                  }}
-                  
-                >
-                  Remove Item
-
-                </button>
+                  <button
+                    className="checkoutbtn"
+                    onClick={() => {
+                      handleRemove(index);
+                    }}
+                  >
+                    Remove Item
+                  </button>
                 </div>
                 <p></p>
               </div>
             );
           })}
         </ol>
-        <button>Checkout</button>
+        <button className="checkoutbtn">Checkout</button>
       </div>
     </Card>
   );
