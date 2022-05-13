@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Card } from "../components/notFound";
+import { Card } from "./UI/Card";
 
-export const notFound = () => {
+export const NotFound = () => {
   return (
     <Card>
       <h2>Page Not Found</h2>

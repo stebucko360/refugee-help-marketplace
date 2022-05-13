@@ -1,17 +1,13 @@
-import React from 'react'
-import { Card } from '../UI/Card'
-import { ItemCard } from './ItemCard';
-import { items } from '../../dummyData/items';
+import React from "react";
+import { Card } from "../UI/Card";
+import { ItemCard } from "./ItemCard";
 
-export const Home = () => {
-    
+export const Home = ({ items }) => {
   return (
     <Card>
-        {items.map((item)=>{
-            return (
-                <ItemCard key={item.itemId} item={item}/>
-            )
-        })}
+      {items.products.map((item) => {
+        return <ItemCard key={item.itemId} item={item} />;
+      })}
     </Card>
-  )
-}
+  );
+};

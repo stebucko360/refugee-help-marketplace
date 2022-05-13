@@ -6,7 +6,7 @@ export const ItemCard = ({ item }) => {
   return (
     <div className="itemCard">
       <img className="itemImage" src={item.image} alt={item.itemName}></img>
-      <h2 className="itemTitle">{item.itemName}</h2>
+      <h2 className="itemTitle">{item.itemname}</h2>
       <p className="itemLocation">{item.location}</p>
       <Button item={item} />
     </div>
