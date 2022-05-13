@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Card } from "../UI/Card";
 import "./DetailedItem.css";
-import { items } from "../../dummyData/items";
+// import { items } from "../../dummyData/items";
 import { Map } from "./Map";
 
-export const DetailedItem = ({ setBasket }) => {
+export const DetailedItem = ({ setBasket, items }) => {
   const { category_name, item_id } = useParams();
   const [addedToBasket, setAddedToBasket] = useState(false);
-  const individualItem = items.filter((item) => {
-    return item.itemId === parseInt(item_id);
+  const individualItem = items.products.filter((item) => {
+    return item.id === parseInt(item_id);
   });
-
+  console.log(individualItem);
   const addToBasket = () => {
     setBasket((currValue) => {
       const newArray = [...currValue, individualItem[0]];
@@ -25,10 +25,10 @@ export const DetailedItem = ({ setBasket }) => {
       <div className="itemContainer">
         <img
           src={individualItem[0].image}
-          alt={individualItem[0].itemName}
+          alt={individualItem[0].itemname}
           className="itemPic"
         ></img>
-        <h2 className="itemNameHeader">{individualItem[0].itemName}</h2>
+        <h2 className="itemNameHeader">{individualItem[0].itemname}</h2>
         <p className="itemDescription">{individualItem[0].description}</p>
         <button
           className="basketbtn"

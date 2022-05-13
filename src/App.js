@@ -51,9 +51,12 @@ function App() {
           />
           <Route
             path="/:category_name/itemInformation/:item_id"
-            element={<DetailedItem setBasket={setBasket} />}
+            element={<DetailedItem setBasket={setBasket} items={items} />}
           />
-          <Route path="/Add%20New%20Item" element={<AddNewItem />} />
+          <Route
+            path="/Add%20New%20Item"
+            element={<AddNewItem setItems={setItems} items={items} />}
+          />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
