@@ -10,6 +10,7 @@
   /* border-radius: 10px; */
   justify-content: center;
   padding: 10px;
+  z-index: 1000;
 }
 
 .categoryBox {
@@ -20,14 +21,24 @@
   text-align: center;
   border: 2px solid rgba(8, 158, 245, 0.699);
   padding-top: 10px;
-  box-shadow: 1px 1px 1px 2px rgb(63, 63, 63);
   text-decoration: none;
+  transition: box-shadow 0.2s;
+}
+
+.categoryBox:hover {
+  box-shadow: 5px 5px #f795c1;
+  transition: box-shadow 0.2s;
 }
 
 .exitButton {
   position: absolute;
-  right: 1%;
+  right: 0.7%;
   background: none;
-  color: red;
+  color: rgb(254, 126, 126);
   border: none;
+  font-size: large;
+}
+
+.exitButton:hover {
+  cursor: pointer;
 }

@@ -1,10 +1,15 @@
 .infoButton {
   border: solid 2px rgb(0, 183, 255);
-  border-radius: 5px;
-  background-color: white;
+  padding: 1% 2%;
+  /* border-radius: 5px; */
+  background-color: rgb(0, 183, 255);
+  color: white;
 }
 
 .infoButton:hover {
-  background-color: rgb(0, 183, 255);
+  background-color: rgb(4, 92, 127);
+  border: solid 2px rgb(4, 92, 127);
   color: white;
+  cursor: pointer;
+  transition: background-color, border, 0.2s;
 }

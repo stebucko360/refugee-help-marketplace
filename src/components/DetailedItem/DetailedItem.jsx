@@ -31,6 +31,7 @@ export const DetailedItem = ({ setBasket }) => {
         <h2 className="itemNameHeader">{individualItem[0].itemName}</h2>
         <p className="itemDescription">{individualItem[0].description}</p>
         <button
+          className="basketbtn"
           onClick={() => {
             addToBasket();
           }}
@@ -45,9 +46,11 @@ export const DetailedItem = ({ setBasket }) => {
           <div className="mapContainer">
             <Map individualItem={individualItem} />
           </div>
-          <h2 className="contactDetailsHeader">Contact details:</h2>
-          <h3>{individualItem[0].location}</h3>
-          <h4>{individualItem[0].contact}</h4>
+          <div className="contactDetailsHeader">
+            <h2>Contact details:</h2>
+            <h3>{individualItem[0].location}</h3>
+            <h4>{individualItem[0].contact}</h4>
+          </div>
         </div>
       </div>
     </Card>

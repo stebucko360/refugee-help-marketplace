@@ -24,15 +24,13 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
     } else setCategoriesSelected(true);
   };
 
-  const resizeNavbar = () => 
-  {
+  const resizeNavbar = () => {
     document.getElementById("testing").classList.add("navBarHover");
-  }
+  };
 
-  const removeResizeNavbar = () => 
-  {
+  const removeResizeNavbar = () => {
     document.getElementById("testing").classList.remove("navBarHover");
-  }
+  };
 
   return (
     <div>
@@ -47,8 +45,8 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
                     className="navPic"
                     src={categories}
                     alt={type.name}
-                    onMouseEnter = { resizeNavbar }
-                    onMouseOut = {removeResizeNavbar } 
+                    onMouseEnter={resizeNavbar}
+                    onMouseOut={removeResizeNavbar}
                   ></img>
                   <p className="categoryButton">Categories</p>
                 </div>
@@ -64,8 +62,8 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
                     className="navPic"
                     src={type.icon}
                     alt={type.name}
-                    onMouseEnter = { resizeNavbar }
-                    onMouseOut = {removeResizeNavbar } 
+                    onMouseEnter={resizeNavbar}
+                    onMouseOut={removeResizeNavbar}
                   ></img>
                   <p className="navButton">
                     Basket{" "}
@@ -82,8 +80,8 @@ export const NavBar = ({ setBasketOpen, basketOpen, basket }) => {
                     className="navPic"
                     src={type.icon}
                     alt={type.name}
-                    onMouseEnter = { resizeNavbar }
-                    onMouseOut = {removeResizeNavbar } 
+                    onMouseEnter={resizeNavbar}
+                    onMouseOut={removeResizeNavbar}
                   ></img>
                   <Link className="navButton" to={`/${type.name}`}>
                     {type.name}
